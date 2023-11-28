@@ -14,7 +14,7 @@ steps:
     goals: 'package'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'target'
+    PathtoPublish: 'target/hello-world-0.0.1-SNAPSHOT.war'
     ArtifactName: 'drop'
     publishLocation: 'Container'
 - task: Docker@2
